@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.1/dist/aframe-extras.min.js"></script>
+        <script src="./components/rotation.js"></script>
+        <script src="./components/coin.js"></script>
+
+      </head>
+      <body>
+        <a-scene background="color:#009aa4">
+
+            <a-entity id="look" camera position="1 1 3"></a-entity>
+
+            <!-- Asset Management -->
+            <a-assets timeout="1000">
+                <a-asset-item id="sea_bed" src="./assets/underwater/scene.gltf"></a-asset-item>
+                <a-asset-item id="diver" src="./assets/scuba_diver/scene.gltf"></a-asset-item>
+                <a-asset-item id="chest" src="./assets/treasure_chest/scene.gltf"></a-asset-item>
+                <a-asset-item id="coin" src="./assets/ancient_coin_003/scene.gltf"></a-asset-item>
+                <a-asset-item id="pile_of_coins" src="./assets/pile_of_coins/scene.gltf"></a-asset-item>
+                <!-- Not Required
+                <a-asset-item id="fish1" src="./assets/guppy_fish/scene.gltf"></a-asset-item>
+                <a-asset-item id="fish2" src="./assets/shiny_fish/scene.gltf"></a-asset-item>
+                <a-asset-item id="fish3" src="./assets/small_fish/scene.gltf"></a-asset-item> -->
+            </a-assets>
+
+            <!-- Underwater -->
+            <a-entity position="0 0 0" id="Sea_bed" rotation="0 -15 0" scale="0.15 0.15 0.15" gltf-model="#sea_bed" terrain-rotation-reader coin-generator>
+              
+              <!--Pile of Coins -->
+              <a-entity position="4 0.1 8.7" id="coin_pile" scale="7 7 7" gltf-model="#pile_of_coins"></a-entity>
+              <!-- Treasure Chest -->
+              <a-entity position="9 0.1 8.6" id="treasure_chest" scale="0.18 0.18 0.18" rotation="0 -40 0" gltf-model="#chest"></a-entity>
+              
+              <a-entity light="type:directional;colour:#ffff66;intensity:1.5" position="0 2 0" ></a-entity>
+              <a-entity light="type:point;colour:#fcf75e;intensity:1" position="0 2 0" ></a-entity>
+
+              <a-entity id="treasurecoins" ></a-entity>
+            </a-entity>
+
+            <!-- Scuba Diver -->
+            <a-entity position="2 0.4 1.9" id="Scuba_diver" rotation="0 90 90" scale="1.83 1.83 1.83" gltf-model="#diver" diver-reader></a-entity>
+        
+            
+
+          </a-scene>
+      </body>
+</html>

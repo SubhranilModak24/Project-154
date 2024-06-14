@@ -1,0 +1,11 @@
+Model Information:
+* title:	Small fish
+* source:	https://sketchfab.com/3d-models/small-fish-8f5de32946f347a0b6c8e55c6a66d46d
+* author:	The SpezX (https://sketchfab.com/SpezX)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Small fish" (https://sketchfab.com/3d-models/small-fish-8f5de32946f347a0b6c8e55c6a66d46d) by The SpezX (https://sketchfab.com/SpezX) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
